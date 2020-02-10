@@ -1,7 +1,6 @@
 # In jupyter/datascience-notebook add
 # conda install zarr
 # conda install holoviews
-# conda install hdatashader
 # conda install datashader
 # pip install git+https://github.com/MITgcm/xmitgcm.git ( tested with commit 876786c413488f6be0cb0b479064a9cd2f68b6b5 )
 
