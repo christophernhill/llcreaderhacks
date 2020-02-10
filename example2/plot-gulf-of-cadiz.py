@@ -2,7 +2,7 @@
 # conda install zarr
 # conda install holoviews
 # conda install datashader
-# pip install git+https://github.com/MITgcm/xmitgcm.git ( tested with commit 876786c413488f6be0cb0b479064a9cd2f68b6b5 )
+# pip3 install git+https://github.com/MITgcm/xmitgcm.git ( tested with commit 876786c413488f6be0cb0b479064a9cd2f68b6b5 )
 
 import xmitgcm.llcreader as llcreader
 import numpy as np
@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 model = llcreader.ECCOPortalLLC4320Model()
 ds_sst = model.get_dataset(varnames=['Theta'], k_levels=[0], type='latlon')
 th=ds_sst.Theta.isel(k=0).astype('f4')
-tv=th[720:744,9000:11000,500:1800].  # Get Gulf of Cadiz for 24 1 hour snapshots
+tv=th[720:744,9000:11000,500:1800]  # Get Gulf of Cadiz for 24 1 hour snapshots
 phi=tv.values
 
 plt.figure(figsize=(30,40))
